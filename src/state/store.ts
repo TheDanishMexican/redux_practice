@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 import counterReducer from "./counter/counterSlice.ts";
+import colorChangeReducer from "./color/colorChangeSlice.ts";
 
 export const store = configureStore({
   reducer: {
     counter: counterReducer,
+    colorChanger: colorChangeReducer,
   },
 });
 
